@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="path/to/bootstrap.css">
+    <script src="path/to/jquery.js"></script>
+    <script src="path/to/bootstrap.js"></script>
+    <script src="js/register.js" defer></script>
+</head>
+<body>
+    <div class="container mt-3">
+        <div class="card">
+            <form class="card-body" id="form-register">
+                <h3 class="card-title fs-3 fw-bold">Register</h3>
+                <h3 class="text-danger fs-5 d-none" id="error">Registration failed</h3>
+                <div>
+                    <label for="inputName" class="form-label">Name</label>
+                    <input type="text" class="form-control" required id="inputName" name="name">
+                </div>
+                <div class="pt-2">
+                    <label for="inputGender" class="form-label">Gender</label>
+                    <select class="form-select" id="inputGender" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="pt-2">
+                    <label for="inputPhone" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" required id="inputPhone" name="phone" pattern="^\+\d{11,15}$" title="Phone number must be in the format +xxxxxxxxxxx" placeholder="+79912809209">
+                </div>
+                <div class="pt-2">
+                    <label for="inputBirthDate" class="form-label">Date of Birth</label>
+                    <input type="date" class="form-control" required id="inputBirthDate" name="birthDate">
+                </div>
+                <div class="pt-2">
+                    <label for="inputAddress" class="form-label">Address</label>
+                    <input type="text" class="form-control" required id="inputAddress" name="address">
+                </div>
+                <div class="pt-2">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" required id="inputEmail" name="email">
+                </div>
+                <div class="pt-2">
+                    <label for="inputPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" required id="inputPassword" name="password">
+                </div>
+                <div class="pt-2">
+                    <label for="inputConfirmPassword" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" required id="inputConfirmPassword" name="confirmPassword">
+                </div>
+                <div class="pt-3">
+                    <button class="btn btn-outline-primary" type="submit" id="btn-register">Register</button>
+                    <a href="/login" class="btn btn-outline-secondary">Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Order Details</h1>
+        <div id="order-details-container">
+            <!-- Order details will be loaded here -->
+        </div>
+    </div>
+    
+    <script type="text/template" id="order-details-template">
+        <div class="order-details">
+            <h3>Order ID: <span class="order-id"></span></h3>
+            <p>Status: <span class="order-status"></span></p>
+            <h4>Dishes</h4>
+            <ul class="dishes-list">
+                <!-- Dishes will be listed here -->
+            </ul>
+        </div>
+    </script>
+    <script type="module" src="/path/to/order-details.js"></script>
+</body>
+</html>

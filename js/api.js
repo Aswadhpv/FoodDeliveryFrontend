@@ -1,0 +1,1 @@
+export const api = "https://food-delivery.int.kreosoft.space"
