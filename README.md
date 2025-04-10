@@ -1,4 +1,4 @@
-#### Frontend study project
+# Frontend study project
 
 Intro:
 In current project you need to implement frontend part of application for food delivery service.
@@ -6,17 +6,17 @@ In current project you need to implement frontend part of application for food d
 API Documentation - https://food-delivery.int.kreosoft.space/swagger/index.html 
 Since a lot of the functionality of the site is tied to the user, you need to provide a way to register users and their further authorization.
 
-## Authorization
+### Authorization
 The address you should have in the address bar when you open the authorization page: http://localhost/login/ 
 You need to send a POST request with the necessary data to this address. The TOKEN of authorization of the registered user will be sent in reply (if the authorization was successful).
 You must use email as your login for authorization.
 
-## Registration
+### Registration
 The address you should have in the address bar when you open the registration page: http://localhost/registration/ 
 At this address you need to send a POST request with the necessary data. In response the TOKEN of authorization of the registered user will be sent (if the registration was successful).
 Please note, the pages where the user enters the phone number must have the following mask validation +7 (xxx) xxx-xx-xx-xx.
 
-## Profile 
+### Profile 
 The page should be accessible at http://localhost/profile
 As you can see from screenshot of layout, editable fields in profile is:
 ●	Name
@@ -24,7 +24,7 @@ As you can see from screenshot of layout, editable fields in profile is:
 ●	Address
 ●	Phone
 
-## Main page
+### Main page
 -Since there is pagination on the site, you need to provide a mechanism that does not just send a request to the server with the page number and updates the list of dishes, you need to make sure that when the page changes, the number is displayed in the URL and when you reload the page, the correct list of dishes for the last selected page is displayed. 
 What the URL should look like when paginating through the menu:
 ●	localhost/ - first page (default)
@@ -53,25 +53,25 @@ If you wish, you can change the display of the filtering and sorting block by us
 
 -When you click on a menu item (a specific dish), the menu item page opens.
 
-# Menu item
+#### Menu item
 The address you should have in the address bar when you open the page:
 http://localhost/item/{id} , where {id} is the identifier of the menu position on the server.
 For the authorized user there is an opportunity to put his rating for the dish if he has ordered this dish at least once before, while the unauthorized user can only view the current rating.
 
-# Cart
+#### Cart
 The address you should have in the address bar when you open the page:
 http://localhost/cart/ 
 
-# Orders 
+#### Orders 
 The address you should have in the address bar when you open the page:
 http://localhost/orders 
 Please note that you can confirm delivery only for those orders whose status is "In Process".
 
-# Order details
+#### Order details
 The address you should have in the address bar when you open the page:
 http://localhost/order/{id} , where {id} is the order ID on the server
 
-# Ordering
+#### Ordering
 The address you should have in the address bar when you open the page:
 http://localhost/purchase 
 When placing an order, all the dishes currently in the user's cart must be taken. After successful checkout the user's cart should be cleared.
