@@ -1,4 +1,5 @@
-### Frontend study project
+#### Frontend study project
+
 Intro:
 In current project you need to implement frontend part of application for food delivery service.
 
